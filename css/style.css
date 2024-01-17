@@ -1,0 +1,153 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #3dae2b;
+    align-content: center;
+    justify-content: center;
+}
+
+.menu-Enlaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.menu-Enlaces-Titulo {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-Enlaces-Titulo a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+}
+
+a:hover {
+    background-color: #f18a00;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #f18a00;
+}
+
+.carousel-control-prev-icon {
+    background-color: #f18a00;
+    border-radius: 100%;
+}
+
+.carousel-control-next-icon {
+    background-color: #f18a00;
+    border-radius: 100%;
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/fondo.webp);
+}
+
+.texto {
+    margin: 0 0 0 auto;
+    max-width: 500px;
+}
+
+.titulo {
+    margin: 0;
+}
+
+.primerVideo {
+    margin: 0 auto 0 0;
+    width: 638px;
+    height: 359px;
+    min-width: 338px;
+    min-height: 190px;
+    border-radius: 10px;
+}
+
+.segundoVideo {
+    min-width: 338px;
+    min-height: 190px;
+    border-radius: 10px;
+}
+
+.atractivos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenTercio {
+    max-height:500px;
+}
+
+/* Puedes ajustar estos estilos según tus preferencias */
+.carousel-inner {
+    margin: 0 auto;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.custom-carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.custom-carousel-wrapper {
+    display: flex;
+}
+
+.custom-carousel-slide {
+    display: flex;
+    width: 300%; /* Ancho total de las imágenes (100% * 3 imágenes) */
+    transition: transform 0.8s ease-in-out;
+}
+
+.custom-carousel-slide img {
+    width: 33.33%; /* Ancho de cada imagen en porcentaje */
+    object-fit: cover; /* Ajusta el tamaño de la imagen para llenar el espacio sin distorsiones */
+    transition: transform 0.8s ease-in-out;
+}
+
+.custom-active {
+    transform: scale(1.2); /* Hace que la imagen activa sea un 20% más grande */
+}
+
+.carousel-control-prev{
+    width: auto;
+    opacity: 0.4;
+}
+
+.carousel-control-next{
+    width: auto;
+    opacity: 0.4;
+}
+
+.atractivos,.galeria,.videos,.tips,.reclutamiento,.infoGeneral{
+    margin-top:100px;
+}
