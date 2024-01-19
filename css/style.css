@@ -3,6 +3,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    background-image: url(../assets/fondo.webp);
 }
 
 .menu {
@@ -61,12 +62,12 @@ a:hover {
     border-radius: 100%;
 }
 
-.videos {
+.videos, .reclutamiento, .galeria, .atractivos {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/fondo.webp);
+  
 }
 
 .texto {
@@ -74,8 +75,12 @@ a:hover {
     max-width: 500px;
 }
 
-.titulo {
+.Titulo-nombre {
     margin: 0;
+}
+
+.centro-align {
+    text-align: center;
 }
 
 .primerVideo {
@@ -101,7 +106,7 @@ a:hover {
 }
 
 .imagenTercio {
-    max-height:500px;
+    max-height: 500px;
 }
 
 /* Puedes ajustar estos estilos según tus preferencias */
@@ -124,30 +129,154 @@ a:hover {
 
 .custom-carousel-slide {
     display: flex;
-    width: 300%; /* Ancho total de las imágenes (100% * 3 imágenes) */
+    width: 300%;
+    /* Ancho total de las imágenes (100% * 3 imágenes) */
     transition: transform 0.8s ease-in-out;
 }
 
 .custom-carousel-slide img {
-    width: 33.33%; /* Ancho de cada imagen en porcentaje */
-    object-fit: cover; /* Ajusta el tamaño de la imagen para llenar el espacio sin distorsiones */
+    width: 33.33%;
+    /* Ancho de cada imagen en porcentaje */
+    object-fit: cover;
+    /* Ajusta el tamaño de la imagen para llenar el espacio sin distorsiones */
     transition: transform 0.8s ease-in-out;
 }
 
 .custom-active {
-    transform: scale(1.2); /* Hace que la imagen activa sea un 20% más grande */
+    transform: scale(1.2);
+    /* Hace que la imagen activa sea un 20% más grande */
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     width: auto;
     opacity: 0.4;
 }
 
-.carousel-control-next{
+.carousel-control-next {
     width: auto;
     opacity: 0.4;
 }
 
-.atractivos,.galeria,.videos,.tips,.reclutamiento,.infoGeneral{
-    margin-top:100px;
+.atractivos,
+.galeria,
+.videos,
+.tips,
+.reclutamiento,
+.infoGeneral {
+    padding-top: 50px;
+}
+
+.footer {
+    background-color: #3dae2b;
+    border-top: 2px solid #284c23;
+}
+
+.col a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background-color: #3dae2b;
+    transition: font-size 0.5s ease;
+}
+
+.col a:hover {
+    color: white;
+    font-size: 22px;
+}
+
+.col-12 a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background-color: #3dae2b;
+    transition: font-size 0.5s ease;
+}
+
+.col-12 a:hover {
+    color: white;
+    font-size: 22px;
+}
+
+.col-12 p {
+    color: black;
+    font-size: 20px;
+}
+
+.col,
+.col-12 {
+    padding: 10px;
+}
+
+
+.row-cols-2 {
+    gap: 10px;
+}
+
+
+.col {
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 49%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    padding-right: 5px;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.reclutamiento,
+.tips {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasos,
+.titulo {
+    padding: 0px 5% 0 5%;
+}
+
+.infoGeneral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoGeneral h2,.infoGeneral p,.infoGeneral a{
+    padding: 0 15px;
+}
+
+.infoGeneral a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px;
+    padding: 5px;
+    border:2px solid #3dae2b;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+}
+
+
+.infoGeneral a:hover{
+    border:2px solid #f18a00;
+    color:white;
+    
+}
+.final{
+    margin:0;
+    padding:10px;
 }
