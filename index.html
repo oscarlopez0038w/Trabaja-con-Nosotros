@@ -17,6 +17,51 @@
     <header>
         <!-- BARRA DE NAVEGACIÓN -->
         <section class="menu">
+            <div class="menuMovil">
+                <label class="popup">
+                    <input type="checkbox">
+                    <div class="burger" tabindex="0">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="popup-window">
+                        <legend>Menu</legend>
+                        <ul>
+                            <li>
+                                <button>
+                                    <a href="#conocenos">Conócenos</a>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="#porqueSomos">¿Por qué somos atractivos?</a>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="#Galeria">Galería</a>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="#consejos">¿Como aplicar?</a>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="#recluta">Reclutamiento</a>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <a href="#Vacantes">Trabaja con Nosotros</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </label>
+            </div>
             <div class="logo">
                 <img src="./assets/logo.png" alt="Logo">
             </div>
@@ -68,6 +113,42 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <div id="carouselExampleIntervalMovil" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./assets/ofertas-enero-mobile-2024.png" class="d-block w-100" alt="banner 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/ofertas-patio-and-grill-phone.png" class="d-block w-100" alt="banner 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/ofertas-precios-saldos-movil-new-2024.png" class="d-block w-100" alt="banner 3">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <!-- VIDEOS DE PRESENTACION DE LA EMPRESA -->
         <Section class="videos" id="conocenos">
             <div class="texto">
@@ -96,8 +177,8 @@
             <div class="titulo">
                 ¿Porque somos atractivos para trabajar?
             </div>
-            <iframe class="segundoVideo" width="916" height="515" src="https://www.youtube.com/embed/D3cVTOTrnRM"
-                title="Capsula SINSA CASS 2021" frameborder="0"
+            <iframe class="segundoVideo" src="https://www.youtube.com/embed/D3cVTOTrnRM" title="Capsula SINSA CASS 2021"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </section>
@@ -105,7 +186,7 @@
         <section class="galeria" id="Galeria">
             <div class="contenedor">
                 <div class="centro-align">
-                    <p>¿Porqué SINSA?</p>
+                    <p class="titulo">¿Porqué SINSA?</p>
                     <p>Conocé porque SINSA es de las empresas más atractivas para trabajar en Nicaragua</p>
                 </div>
                 <div class="fila">
@@ -135,7 +216,7 @@
         <!-- TIPS PARA CREAR CORRECTAMENTE TU CV Y PARA EL PROCESO DE ENTREVISTA -->
         <section class="tips" id="consejos">
             <div class="pasos">
-                <h2>Consejos para CV</h2>
+                <h2 class="titulo">Consejos para CV</h2>
                 <p><strong>1. Resalta tus Logros con Resultados Cuantificables:</strong> En lugar de simplemente
                     enumerar tus responsabilidades anteriores, destaca logros específicos utilizando resultados
                     cuantificables siempre que sea posible.</p>
@@ -149,7 +230,7 @@
             </div>
 
             <div class="pasos">
-                <h2>Consejos para Entrevistas</h2>
+                <h2 class="titulo">Consejos para Entrevistas</h2>
                 <p><strong>1. Utiliza la Técnica STAR para Responder Preguntas Conductuales:</strong> Estructura tus
                     respuestas a preguntas sobre situaciones pasadas utilizando la técnica STAR (Situación, Tarea,
                     Acción, Resultado).</p>
@@ -197,28 +278,39 @@
                     <p>Contáctanos y descubre por qué somos el mejor lugar para comprar y la mejor empresa para
                         trabajar.</p>
                 </div>
-            
+
                 <div class="col-12">
-                    <a href="https://www.tecoloco.com.ni/empresas-destacadas/trabajos-en-sinsa_2540.aspx"><i
-                            class="fa-solid fa-person-walking-luggage"></i>Conoce
-                        nuestras vacantes</a>
+                    <a href="https://www.tecoloco.com.ni/empresas-destacadas/trabajos-en-sinsa_2540.aspx">
+                        <i class="fa-solid fa-person-walking-luggage"></i>
+                        Conoce
+                        nuestras vacantes
+                    </a>
                 </div>
             </div>
             <div class="row row-cols-2">
                 <div class="col">
-                    <a target="_blank" rel="nofollow" href="https://goo.gl/maps/hs4XY5eaG8EfxiNc9"><i
-                            class="fa-solid fa-location-dot"></i>KM 8, 1/2 Carr. a Masaya, Managua 11102, Nicaragua
+                    <a target="_blank" rel="nofollow" href="https://goo.gl/maps/hs4XY5eaG8EfxiNc9">
+                        <i class="fa-solid fa-location-dot"></i>
+                        KM 8, 1/2 Carr. a Masaya, Managua 11102, Nicaragua
                     </a>
                 </div>
                 <div class="col">
-                    <a target="_blank" rel="nofollow" href="tel:50522787777" tabindex="0"><i
-                            class="fa-solid fa-phone"></i>(+505) 2278-7777
+                    <a target="_blank" rel="nofollow" href="tel:50522787777" tabindex="0">
+                        <i class="fa-solid fa-phone"></i>
+                        (+505) 2278-7777
                     </a>
                 </div>
-                <div class="col"><a href="mailto:seleccion@sinsa.com.ni"><i
-                            class="fa-regular fa-envelope"></i>seleccion@sinsa.com.ni</a></div>
-                <div class="col"><a href="https://www.sinsa.com.ni"><i
-                            class="fa-brands fa-chrome"></i></i>www.sinsa.com.ni</a></div>
+                <div class="col"><a href="mailto:seleccion@sinsa.com.ni">
+                        <i class="fa-regular fa-envelope"></i>
+                        seleccion@sinsa.com.ni
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.sinsa.com.ni">
+                        <i class="fa-brands fa-chrome"></i>
+                        www.sinsa.com.ni
+                    </a>
+                </div>
             </div>
             <p class="final">¡Queremos conocerte! Ingresá a nuestro sitio y dejanos tu información.</p>
         </div>
@@ -228,4 +320,5 @@
     <script src="./JS/mainmaterialize.js"></script>
     <script src="./JS/main.js"></script>
 </body>
+
 </html>
