@@ -88,6 +88,28 @@
     right: auto;
 }
 
+@media (max-width: 475px) {
+    .carousel {
+        perspective: 200px;
+        height: 420px;
+    }
+    .carusel .carusel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        left: 70px;
+    }
 
+    .carusel .indicadors {
+
+        bottom: 56px;
+    }
+    
+}
 
 
