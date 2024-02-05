@@ -42,7 +42,7 @@ html {
 .menu-Enlaces-Titulo a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     margin: 15px;
     padding: 5px;
     font-weight: 500;
@@ -52,8 +52,13 @@ html {
 }
 
 .menu-Enlaces-Titulo a:hover {
-    background-color: #f18a00;
+    border-bottom:#f18a00 solid;
+    border-radius: 0px;
+    border-width: 5px;
+     
 }
+
+
 
 /*CARRUSEL DE BANNERS*/
 #carouselExampleIntervalMovil {
@@ -166,7 +171,7 @@ html {
 
 .contenedorImagen p {
     position: absolute;
-    top: 45%;
+    top: 40%;
     color: white;
     margin: 0;
     text-align: center;
@@ -307,7 +312,7 @@ html {
 
 .footer {
     background-color: #3dae2b;
-   
+   padding-bottom: 10px;
 }
 
 .col a {
@@ -331,13 +336,13 @@ html {
     transition: font-size 0.5s ease;
 }
 
-.col-12 a:hover {
+/*.col-12 a:hover {
     color: white;
     font-size: 22px;
-}
+}*/
 
 .col-12 p {
-    color: black;
+    
     font-size: 18px;
 }
 
@@ -372,7 +377,7 @@ i {
 }
 
 p {
-    margin-top: 1rem;
+   /* margin-top: 1rem;*/
     margin-bottom: 1rem;
 }
 
@@ -409,27 +414,12 @@ p {
     padding: 0 15px;
 }
 
-.infoGeneral a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 15px;
-    padding: 5px;
-    border: 2px solid #f18a00;
-    border-radius: 20px;
-    transition: background-color 0.5s ease;
-}
-
-.infoGeneral a:hover {
-    border: 2px solid #3dae2b;
-    color: white;
-
-}
 
 .final {
-    margin: 0;
-    padding: 10px;
+ 
+    color: #fff !important;
+    font-size: 18px;
+
 }
 
 /*BOTON MOVIL*/
@@ -701,6 +691,7 @@ p {
         font-size: 20px;
         font-weight: 600;
         margin: 15px;
+        margin-top: 30px;
         padding: 10px !important;
         border-radius: 10px;
         transition: background-color 0.5s ease 0s;
@@ -710,6 +701,24 @@ p {
        
         background-color: #3dae2b;
         color: white;
+    }
+
+    .btnfinal a {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(241, 138, 0); 
+        font-size: 20px;
+        font-weight: 600;
+        margin: 15px;
+        padding: 10px !important;
+        border-radius: 10px;
+    
+    }
+    
+    .btnfinal a:hover {
+       
+        border: #fff 5px outset;
+        color: #000;
     }
 
 
@@ -960,6 +969,97 @@ p {
         display: block !important;
         ;
     }
+
+    .texto-con-sombra-container {
+        height: 280px;
+    }
+    .carousel-item img{
+        height: 280px ;
+    }
+
+    #carouselExampleIntervalMovil {
+       height: 280px;
+    }
+
+    .youtube{
+        width: 350px;
+        height: 250px;
+    }
+
+    .videos{
+        gap:0px;
+    }
+
+    #alineado{
+        text-align: center;
+    }
+
+    .espacio{
+        padding-bottom: 0px;
+    }
+
+    .contenedorImagen p{
+        top:30%;
+    }
+
+    #contenedor3{
+        top:23%;
+    }
+
+    #cards{
+        padding-top: 0px;
+    }
+
+    #iconos{
+        padding-top: 10px;
+        height: 1600px;
+    }
+
+    .card{
+        margin-right: 0px;
+    }
+
+    .seccion-8 .card{
+        margin-bottom: 2rem;
+    }
+
+    .sinsa{
+        background-size: cover;
+    height: 1500px;
+    background-repeat: no-repeat;
+    }
+    .margen{
+        padding-top: 0px !important;
+    }
+    .galeria{
+        padding-top: 10px;
+    }
+
+.carusel{
+    height: 280px;
+}
+
+.carusel .carusel-item{
+    width: 270px;
+        height: 240px; 
+        left: 10px !important;
+}
+
+.carusel .indicadors{
+    bottom:-45px;
+    left: 0px !important;
+}
+ol, ul{
+    padding-left:0rem;
+}
+
+
+
+
+
+
+
+
 }
 
 @media (max-width: 675px) {
